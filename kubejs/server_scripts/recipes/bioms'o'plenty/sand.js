@@ -44,7 +44,6 @@ ServerEvents.recipes(event => {
     // 白沙
     event.recipes.create.crushing([
         "biomesoplenty:white_sand", 
-        Item.of("minecraft:bone_meal", 1).withChance(0.1),
         Item.of("minecraft:amethyst_shard", 1).withChance(0.01)
     ], [
         "minecraft:calcite"
@@ -63,7 +62,7 @@ ServerEvents.recipes(event => {
             {
                 "item": "minecraft:bone_meal",
                 "count": 1,
-                "chance": 0.5
+                "chance": 0.02
             },
             {
                 "item": "biomesoplenty:sea_oats",
@@ -83,7 +82,7 @@ ServerEvents.recipes(event => {
             {
                 "item": "create:zinc_nugget",
                 "count": 1,
-                "chance": 0.09
+                "chance": 0.02
             },
             {
                 "item": "minecraft:ink_sac",
