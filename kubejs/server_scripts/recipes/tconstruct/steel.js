@@ -20,9 +20,11 @@ ServerEvents.recipes(event => {
     }).id("ustcreate:alloy/steel")
 
     // 移除钢锭浇筑配方
-    event.remove({output:"tconstruct:steel_ingot"});
-    event.remove({output:"tconstruct:steel_block", type:"tconstruct:casting_basin"});
-    event.remove({output:"tconstruct:steel_nugget", type:"tconstruct:casting_table"});
+    event.remove({id: "tconstruct:smeltery/casting/metal/steel/ingot_gold_cast"});
+    event.remove({id: "tconstruct:smeltery/casting/metal/steel/ingot_sand_cast"});
+    event.remove({id: "tconstruct:smeltery/casting/metal/steel/block"});
+    event.remove({id: "tconstruct:smeltery/casting/metal/steel/nugget_gold_cast"});
+    event.remove({id: "tconstruct:smeltery/casting/metal/steel/nugget_sand_cast"});
 
     // 浇筑得到钢坯
     event.custom({
