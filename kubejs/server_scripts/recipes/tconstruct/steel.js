@@ -9,7 +9,7 @@ ServerEvents.recipes(event => {
             },
             {
                 "amount": 15,
-                "tag": "ustcreate:liqui_coal"
+                "fluid": "ustcreate:liquid_coal"
             }
         ],
         "result": {
